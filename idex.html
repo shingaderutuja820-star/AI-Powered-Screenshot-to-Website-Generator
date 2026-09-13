@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Screenshot to Website Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        AI WebGen
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">How It Works</a>
+        <a href="#">About</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>
+        AI-Powered Screenshot-to-Website Generator
+    </h1>
+
+    <p>
+        Upload a website screenshot and let AI
+        generate a working webpage.
+    </p>
+
+</section>
+
+
+<section class="generator">
+
+    <div class="upload-box">
+
+        <h2>Upload Screenshot</h2>
+
+        <input
+            type="file"
+            id="screenshot"
+            accept="image/png,image/jpeg"
+        >
+
+        <div id="preview"></div>
+
+        <button onclick="generateWebsite()">
+            Generate Website
+        </button>
+
+    </div>
+
+
+    <div class="result-box">
+
+        <h2>Generated Website</h2>
+
+        <iframe id="websitePreview"></iframe>
+
+    </div>
+
+</section>
+
+
+<section class="code-section">
+
+    <h2>Generated HTML</h2>
+
+    <textarea id="htmlCode"></textarea>
+
+    <h2>Generated CSS</h2>
+
+    <textarea id="cssCode"></textarea>
+
+</section>
+
+
+<footer>
+
+    <p>
+        AI-Powered Screenshot-to-Website Generator
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
